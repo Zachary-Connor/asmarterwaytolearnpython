@@ -1,7 +1,7 @@
 '''
 Author: Zachary Connor
 
-Version: 5/15/2025
+Last Updated: 6/6/2025
 
 Program: Cover all 77 lessons and topics from Mark Myers' A Smarter Way to Learn Python
          I personally coded each lesson based on the topics covered, but they are quite
@@ -375,6 +375,141 @@ print("\nLesson : ")
 '''
 print("\nLesson : ")
 # Lesson 50 - Functions within functions
+'''
+'''
+print("\nLesson : ")
+
+# Lesson 51 - 
+'''
+'''
+print("\nLesson : ")
+
+# Lesson 52 - 
+'''
+'''
+print("\nLesson : ")
+
+# Lesson 53 - 
+'''
+'''
+print("\nLesson : ")
+
+# Lesson 54 - 
+'''
+'''
+print("\nLesson : ")
+
+# Lesson 55 - 
+'''
+'''
+print("\nLesson : ")
+
+# Lesson 56 - 
+'''
+'''
+print("\nLesson : ")
+
+# Lesson 57 - 
+'''
+'''
+print("\nLesson : ")
+
+# Lesson 58 - 
+'''
+'''
+print("\nLesson : ")
+
+# Lesson 59 - 
+'''
+'''
+print("\nLesson : ")
+
+# Lesson 60 - 
+'''
+'''
+print("\nLesson : ")
+
+# Lesson 61 - 
+'''
+'''
+print("\nLesson : ")
+
+# Lesson 62 - 
+'''
+'''
+print("\nLesson : ")
+
+# Lesson 63 - 
+'''
+'''
+print("\nLesson : ")
+
+# Lesson 64 - 
+'''
+'''
+print("\nLesson : ")
+
+# Lesson 65 - 
+'''
+'''
+print("\nLesson : ")
+
+# Lesson 66 - 
+'''
+'''
+print("\nLesson : ")
+
+# Lesson 67 - 
+'''
+'''
+print("\nLesson : ")
+
+# Lesson 68 - 
+'''
+'''
+print("\nLesson : ")
+
+# Lesson 69 - 
+'''
+'''
+print("\nLesson : ")
+
+# Lesson 70 - 
+'''
+'''
+print("\nLesson : ")
+
+# Lesson 71 - 
+'''
+'''
+print("\nLesson : ")
+
+# Lesson 72 - 
+'''
+'''
+print("\nLesson : ")
+
+# Lesson 73 - 
+'''
+'''
+print("\nLesson : ")
+
+# Lesson 74 - 
+'''
+'''
+print("\nLesson : ")
+
+# Lesson 75 - 
+'''
+'''
+print("\nLesson : ")
+
+# Lesson 76 - 
+'''
+'''
+print("\nLesson : ")
+
+# Lesson 77 - 
 '''
 '''
 print("\nLesson : ")
