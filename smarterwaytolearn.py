@@ -257,259 +257,260 @@ print(hobbies)
 # Lesson 20 - Tuples
 '''
 '''
-print("\nLesson : ")
+print("\nLesson 20: ")
 # Lesson 21 - for loops
 '''
 '''
-print("\nLesson : ")
+print("\nLesson 21: ")
 # Lesson 22 - for loops nested
 '''
 '''
-print("\nLesson : ")
+print("\nLesson 22: ")
 # Lesson 23 - Getting information from the user and converting strings and numbers
 '''
 '''
-print("\nLesson : ")
+print("\nLesson 23: ")
 # Lesson 24 - Changing case
 '''
 '''
-print("\nLesson : ")
+print("\nLesson 24: ")
 # Lesson 25 - Dictionaries: What they are
 '''
 '''
-print("\nLesson : ")
+print("\nLesson 25: ")
 # Lesson 26 - Dictionaries: How to code one
 '''
 '''
-print("\nLesson : ")
+print("\nLesson 26: ")
 # Lesson 27 - Dictionaries: How to pick information out of them
 '''
 '''
-print("\nLesson : ")
+print("\nLesson 27: ")
 # Lesson 28 - Dictionaries: The versatility of keys and values
 '''
 '''
-print("\nLesson : ")
+print("\nLesson 28: ")
 # Lesson 29 - Dictionaries: Adding items
 '''
 '''
-print("\nLesson : ")
+print("\nLesson 29: ")
 # Lesson 30 - Dictionaries: Removing and changing items
 '''
 '''
-print("\nLesson : ")
+print("\nLesson 30: ")
 # Lesson 31 - Dictionaries: Looping through values
 '''
 '''
-print("\nLesson : ")
+print("\nLesson 31: ")
 # Lesson 32 - Dictionaries: Looping through keys
 '''
 '''
-print("\nLesson : ")
+print("\nLesson 32: ")
 # Lesson 33 - Dictionaries: Looping through key-value pairs
 '''
 '''
-print("\nLesson : ")
+print("\nLesson 33: ")
 # Lesson 34 - Creating a list of Dictionaries
 '''
 '''
-print("\nLesson : ")
+print("\nLesson 34: ")
 # Lesson 35 - How to pick information out of a list of dictionaries
 '''
 '''
-print("\nLesson : ")
+print("\nLesson 35: ")
 # Lesson 36 - How to append a new dictionary to a list of dictionaries
 '''
 '''
-print("\nLesson : ")
+print("\nLesson 36: ")
 # Lesson 37 - Creating a dictionary that contains lists
 '''
 '''
-print("\nLesson : ")
+print("\nLesson 37: ")
 # Lesson 38 - How to get information out of a list within a dictionary
 '''
 '''
-print("\nLesson : ")
+print("\nLesson 38: ")
 # Lesson 39 - Creating a dictionary that contains a dictionary
 '''
 '''
-print("\nLesson : ")
+print("\nLesson 39: ")
 # Lesson 40 - How to get information out of a dictionary within another dictionary
 '''
 '''
-print("\nLesson : ")
+print("\nLesson 40: ")
 # Lesson 41 - Functions
 '''
 '''
-print("\nLesson : ")
+print("\nLesson 41: ")
 # Lesson 42 - Functions: Passing them information
 '''
 '''
-print("\nLesson : ")
+print("\nLesson 42: ")
 # Lesson 43 - Functions: Passing information to them a different way
 '''
 '''
-print("\nLesson : ")
+print("\nLesson 43: ")
 # Lesson 44 -Functions: Assigning a default value to a parameter
 '''
 '''
-print("\nLesson : ")
+print("\nLesson 44: ")
 # Lesson 45 - Functions: Mixing positional and keyword arguments
 '''
 '''
-print("\nLesson : ")
+print("\nLesson 45: ")
 # Lesson 46 - Functions: Dealing with an unkown number of arguments
 '''
 '''
-print("\nLesson : ")
+print("\nLesson 46: ")
 # Lesson 47 - Functions: Passing information back from them
 '''
 '''
-print("\nLesson : ")
+print("\nLesson 47: ")
 # Lesson 48 -Using functions as variables (which is what they really are)
 '''
 '''
-print("\nLesson : ")
+print("\nLesson 48: ")
 # Lesson 49 -Functions: Local vs. global variables
 '''
 '''
-print("\nLesson : ")
+print("\nLesson 49: ")
 # Lesson 50 - Functions within functions
 '''
 '''
-print("\nLesson : ")
+print("\nLesson 50: ")
 
 # Lesson 51 - 
 '''
 '''
-print("\nLesson : ")
+print("\nLesson 51: ")
 
 # Lesson 52 - 
 '''
 '''
-print("\nLesson : ")
+print("\nLesson 52: ")
 
 # Lesson 53 - 
 '''
 '''
-print("\nLesson : ")
+print("\nLesson 53: ")
 
 # Lesson 54 - 
 '''
 '''
-print("\nLesson : ")
+print("\nLesson 54: ")
 
 # Lesson 55 - 
 '''
 '''
-print("\nLesson : ")
+print("\nLesson 55: ")
 
 # Lesson 56 - 
 '''
 '''
-print("\nLesson : ")
+print("\nLesson 56: ")
 
 # Lesson 57 - 
 '''
 '''
-print("\nLesson : ")
+print("\nLesson 57: ")
 
 # Lesson 58 - 
 '''
 '''
-print("\nLesson : ")
+print("\nLesson 58: ")
 
 # Lesson 59 - 
 '''
 '''
-print("\nLesson : ")
+print("\nLesson 59: ")
 
 # Lesson 60 - 
 '''
 '''
-print("\nLesson : ")
+print("\nLesson 60: ")
 
 # Lesson 61 - 
 '''
 '''
-print("\nLesson : ")
+print("\nLesson 61: ")
 
 # Lesson 62 - 
 '''
 '''
-print("\nLesson : ")
+print("\nLesson 62: ")
 
 # Lesson 63 - 
 '''
 '''
-print("\nLesson : ")
+print("\nLesson 63: ")
 
 # Lesson 64 - 
 '''
 '''
-print("\nLesson : ")
+print("\nLesson 64: ")
 
 # Lesson 65 - 
 '''
 '''
-print("\nLesson : ")
+print("\nLesson 65: ")
 
 # Lesson 66 - 
 '''
 '''
-print("\nLesson : ")
+print("\nLesson 66: ")
 
 # Lesson 67 - 
 '''
 '''
-print("\nLesson : ")
+print("\nLesson 67: ")
 
 # Lesson 68 - 
 '''
 '''
-print("\nLesson : ")
+print("\nLesson 68: ")
 
 # Lesson 69 - 
 '''
 '''
-print("\nLesson : ")
+print("\nLesson 69: ")
 
 # Lesson 70 - 
 '''
 '''
-print("\nLesson : ")
+print("\nLesson 70: ")
 
 # Lesson 71 - 
 '''
 '''
-print("\nLesson : ")
+print("\nLesson 71: ")
 
 # Lesson 72 - 
 '''
 '''
-print("\nLesson : ")
+print("\nLesson 72: ")
 
 # Lesson 73 - 
 '''
 '''
-print("\nLesson : ")
+print("\nLesson 73: ")
 
 # Lesson 74 - 
 '''
 '''
-print("\nLesson : ")
+print("\nLesson 74: ")
 
 # Lesson 75 - 
 '''
 '''
-print("\nLesson : ")
+print("\nLesson 75: ")
 
 # Lesson 76 - 
 '''
 '''
-print("\nLesson : ")
+print("\nLesson 76: ")
 
 # Lesson 77 - 
 '''
 '''
-print("\nLesson : ")
+print("\nLesson 77: ")
+
