@@ -266,8 +266,16 @@ print(f"nums[1] = {nums[1]}")
 print(f"combine first two numbers in tuple = {nums[0] + nums[1]}")
 # Lesson 21 - for loops
 '''
+For loops are used to iterate through objects or ranges of numbers to repeat a task or grab the next item
+They end with a : and anything inside the loop is indented. You can place more structures like if statements inside of them
 '''
 print("\nLesson 21: ")
+saints = ["Padre Pio", "Augustine", "Francis of Assisi"]
+for a_saint in saints:
+    if a_saint is "Padre Pio":
+        print(f"{a_saint} - Shia LeBeouf acted as him!")
+    else:
+        print(f"{a_saint} - Shia LeBeouf did not act as him.")
 # Lesson 22 - for loops nested
 '''
 '''
