@@ -256,8 +256,14 @@ print("hobbies list after popping: ", end = "")
 print(hobbies)
 # Lesson 20 - Tuples
 '''
+Tuples are very similar to lists except for the fact that they cannot be changed. This is called immutable
+Tuples are denoted by () parenthesis and cannot be modified. To modify a tuple, you must redefine it entirely
+Tuples are accessed by indexes just like lists are
 '''
 print("\nLesson 20: ")
+nums = (1, 2, 3, 4)
+print(f"nums[1] = {nums[1]}")
+print(f"combine first two numbers in tuple = {nums[0] + nums[1]}")
 # Lesson 21 - for loops
 '''
 '''
