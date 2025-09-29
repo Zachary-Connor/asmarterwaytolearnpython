@@ -278,8 +278,18 @@ for a_saint in saints:
         print(f"{a_saint} - Shia LeBeouf did not act as him.")
 # Lesson 22 - for loops nested
 '''
+We can nest for loops to go through 2 dimensinoal structures. There is an outer loop and an inner loop.
+The outer loop starts the first iteration and then goes down into the inner loop while the inner loop controls an entire cycle
+before returning to the outer loop for the next iteration
 '''
 print("\nLesson 22: ")
+vowels = ("a", "e", "i", "o", "u")
+word = "Hello"
+for a_letter in word:
+    for a_vowel in vowels:
+        if a_letter == a_vowel:
+            print(f"found a vowel in {word}: {a_vowel}")
+
 # Lesson 23 - Getting information from the user and converting strings and numbers
 '''
 '''
