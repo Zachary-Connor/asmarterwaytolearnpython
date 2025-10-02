@@ -292,20 +292,51 @@ for a_letter in word:
 
 # Lesson 23 - Getting information from the user and converting strings and numbers
 '''
+Getting input from the user is quite straight forward in Python. simply use the input() function to grab input
+You need to store the input into a variable and all values grabbed from input are strings by default.
+To change the data type of the variable you can enclose them in other functions like int(), str(), float(), bool(), etc.
+You can prompt the user by adding string text inside the input() function.
 '''
 print("\nLesson 23: ")
+number = input("Please enter your favorite number here: ") #number is a string currently
+number = int(number) # convert number to be an integer instead of a string
+number += 10
+print("Here is your number plus 10: " + str(number))
 # Lesson 24 - Changing case
 '''
+This lesson covers three main functions: lower(), upper(), and title()
+lower() converts the string into all lowercase letters
+upper() converts the string into all uppercase letters
+title() converts the string to start all words with an uppercase letter and the remaining letters to be lowercase
 '''
 print("\nLesson 24: ")
+city = input("Please enter the city you were born in: ")
+print(f"You were born in {city}")
+print(f"You were born in {city.lower()}")
+print(f"You were born in {city.upper()}")
+print(f"You were born in {city.title()}")
 # Lesson 25 - Dictionaries: What they are
 '''
+Dictionaries are a built in data structure for python. Instead of using indexes like lists and tuples,
+Dictionaries use key value pairs typically to represent objects and their attributes.
+For example lets say we want to know the information of cutomer 6789's order.
+The have a first name field and a value associated with it, a last name field and a value associated with it, etc
 '''
 print("\nLesson 25: ")
+print("This lesson was used as review for other subjects. Simply refer to previous lessons.")
 # Lesson 26 - Dictionaries: How to code one
 '''
+Dictionaries are enclose in {} curly brackets and the left hand side of a : colon is the key and the right hand side
+of the : colon is the value. Each key value pair is separated by a comma. Both keys and values can be different data types, but in this
+example I will use strings for both key and value in the dictionary
 '''
 print("\nLesson 26: ")
+customer_29876 = {
+    "first name": "David",
+    "last name": "Elliot",
+    "address": "4803 Wellesley St."
+}
+print(customer_29876)
 # Lesson 27 - Dictionaries: How to pick information out of them
 '''
 '''
