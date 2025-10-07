@@ -339,20 +339,37 @@ customer_29876 = {
 print(customer_29876)
 # Lesson 27 - Dictionaries: How to pick information out of them
 '''
+In order to grab information from a dictionary, we need to know each elements key. We use the [] square brackets like we
+would with a list, except intead of using an index value, we use the key to extract its values
 '''
 print("\nLesson 27: ")
+print(f"The customer's last name is {customer_29876["last name"]}")
 # Lesson 28 - Dictionaries: The versatility of keys and values
 '''
+Keys and values can be of different data types like strings and numbers
 '''
 print("\nLesson 28: ")
+print("No new code here")
 # Lesson 29 - Dictionaries: Adding items
 '''
+To add an item to a dictionary, all you need to do is specify the dictionary name and the key on the
+left side of the = and on the right side the value.
 '''
 print("\nLesson 29: ")
+print(f"customer_29876 before: {customer_29876}")
+customer_29876["city"] = "Toronto"
+print(f"customer_29876 after: {customer_29876}")
 # Lesson 30 - Dictionaries: Removing and changing items
 '''
+To remove an item from a dictionary, it is similar to removing an element from a list using its index.
+Simply use the keyword del, the name of the dictionary, and the key to remove it from the dictionary.
+You can also overwrite data in a dictionary by reassigning the key a different value
 '''
 print("\nLesson 30: ")
+print(f"customer_29876 before: {customer_29876}")
+del customer_29876["city"]
+customer_29876["last name"] = "Connor"
+print(f"customer_29876 after: {customer_29876}")
 # Lesson 31 - Dictionaries: Looping through values
 '''
 '''
