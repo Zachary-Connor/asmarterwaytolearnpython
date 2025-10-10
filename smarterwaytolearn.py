@@ -1,7 +1,7 @@
 '''
 Author: Zachary Connor
 
-Last Updated: 6/6/2025
+Last Updated: 10/9/2025
 
 Program: Cover all 77 lessons and topics from Mark Myers' A Smarter Way to Learn Python
          I personally coded each lesson based on the topics covered, but they are quite
