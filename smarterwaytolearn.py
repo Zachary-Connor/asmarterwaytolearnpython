@@ -372,24 +372,60 @@ customer_29876["last name"] = "Connor"
 print(f"customer_29876 after: {customer_29876}")
 # Lesson 31 - Dictionaries: Looping through values
 '''
+To loop through values in a dictionary, you must use the dictionary name followed by .values().
+This returns a view object of all of the values in the dictionary that you can then loop through
+using a traditional pythonic for loop
 '''
 print("\nLesson 31: ")
+print("Dictionary values: ")
+for value in customer_29876.values():
+    print(value)
 # Lesson 32 - Dictionaries: Looping through keys
 '''
+Similar to looping through values in the above lesson, dictionaries also come with a function to iterate
+through the keys of a dictionary using the name followed by .keys()
 '''
 print("\nLesson 32: ")
+print("Dictionary keys: ")
+for key in customer_29876.keys():
+    print(key)
 # Lesson 33 - Dictionaries: Looping through key-value pairs
 '''
+Dictionaries can be iterated through by using both a key and value pair with the items() function.
+Just like looping through values and keys, we use the dictionary name followed by .items(). The catch is that
+we need a second variable in the for loop.
 '''
 print("\nLesson 33: ")
+print("Here are the dictionary key and value pairs: ")
+for key, value in customer_29876.items():
+    print(f"The key is {key} and the value is {value}")
 # Lesson 34 - Creating a list of Dictionaries
 '''
+Lists can hold dictionaries as well!
 '''
 print("\nLesson 34: ")
+customers = [
+    {
+        "customer_id": 1,
+        "first name": "Zach",
+        "last name": "Connor",
+        "address": "12345 Dog Lane"
+    },
+    {
+        "customer_id": 2,
+        "first name": "Luffy",
+        "last name": "Monkey",
+        "address": "6789 Windmill Village"
+    },
+]
+print(customers)
 # Lesson 35 - How to pick information out of a list of dictionaries
 '''
+Since a list uses indexes, we just use the index to grab a dictionary out of the list or we can
+use another set of [] square brackets to access a key in the dictionary
 '''
 print("\nLesson 35: ")
+print(f"Here is the first name of customer 2 in the customers list: {customers[1]["first name"]}")
 # Lesson 36 - How to append a new dictionary to a list of dictionaries
 '''
 '''
