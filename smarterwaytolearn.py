@@ -483,12 +483,26 @@ def main() -> None:
     print(f"nested_dictionaries first inner dictionary name value is {nested_dict[0]["name"]}")
     # Lesson 41 - Functions
     '''
+    Functions are used to modularize code and make it easy to repeat and reuse. Funtions use 
+    the def keyword, the function name, and end with ():
+    Anything inside the function must be indented properly. To invoke the functions, simply use
+    its name followed by open and closed parenthesis
     '''
     print("\nLesson 41: ")
+
+    def greet() -> None:
+        print("Hello there from the greet function!")
+    greet()
     # Lesson 42 - Functions: Passing them information
     '''
+    Functions can receive information. The variables in the function definition are known as parameters,
+    and the variables or values passed to the function call are known as arguments.
     '''
     print("\nLesson 42: ")
+    def greet_name(name: str) -> None:
+        print(f"Hello there {name}! ")
+    greet_name("Gunther")
+
     # Lesson 43 - Functions: Passing information to them a different way
     '''
     '''
