@@ -469,7 +469,12 @@ def main() -> None:
     nested_dict: dict = {
         0: {
             "name": "Zachary",
+            "age": 22
         },
+        1: {
+            "name": "Gunther",
+            "age": 25
+        }
     }
     print(nested_dict)
     # Lesson 40 - How to get information out of a dictionary within another dictionary
@@ -505,16 +510,37 @@ def main() -> None:
 
     # Lesson 43 - Functions: Passing information to them a different way
     '''
+    We can pass values to specific parameters in the function call as long
+    as the name of the parameter is known
     '''
     print("\nLesson 43: ")
+    greet_name(name = "Zachary")
     # Lesson 44 -Functions: Assigning a default value to a parameter
     '''
+    You can assign parameters a default value by using the assignment operator to assing them a value
+    in the function definition. Note that if you have more than one parameter and one of the parameters
+    does not contain a default value, it must be defined before all parameters with a default value.
+    If the function is called without overriding parameters, default values are used instead
     '''
     print("\nLesson 44: ")
+    def greet_john(name: str = "John") -> None:
+        print(f"Hello {name}")
+    greet_john()
+    greet_john("Joey")
+
     # Lesson 45 - Functions: Mixing positional and keyword arguments
     '''
+    When defining and calling functinos, it is important to know what keyword and posisitonal parameters and arguments are.
+    Parameters are the variables used in the function definition, and arguments are the values or variables used in the function call.
+    Positional parameters are parameters without keyword names, keyword parameters are named variables in the function definition.
+    Posisitonal arguments follow the order of parameters defined in the function definition, and keyword arguments are specified in the function call.
+    Keyword parameters and arguments always come last.
     '''
     print("\nLesson 45: ")
+    def find_something(dct: dict = nested_dict, number: int = 0, key: str = "name") -> None:
+        print(f"Inside dictionary, item number {number} has {key} as {dct[number][key]}")
+    find_something()
+    find_something(nested_dict, key = "age", number = 1)
     # Lesson 46 - Functions: Dealing with an unkown number of arguments
     '''
     '''
