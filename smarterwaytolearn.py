@@ -543,8 +543,32 @@ def main() -> None:
     find_something(nested_dict, key = "age", number = 1)
     # Lesson 46 - Functions: Dealing with an unkown number of arguments
     '''
+    When creating functions, we may want to have optional info we want to pass, but are not sure how many key-word parameters we need.
+    We can get around this issue by using the double asterisk ** followed by a variable name which means there may or may 
+    not be one or more extra arguments passed. The additional arguments are stored in a dictionary with the name of the
+    ** variable used as a parameter. Optional arguments/parameters must come after regular arguments/parameters
+
+    Posistional arguments can be optional as well. To handle optional positoinal arguments, you can use a single asterisk.
+    The posisiotnal arguments beyond the ones specified in the definition are put into a tuple.
     '''
     print("\nLesson 46: ")
+    # ** are used for an unkown number of key-word arguments stored in a dict
+    def display_results(winner: str, score: str, **other_info) -> None:
+        print(f"The winner was {winner}")
+        print(f"The score was {score}")
+        for key, value in other_info.items():
+            print(f"{key}: {value}")
+
+    display_results(winner = "Real Madrid", score = "1-0", overtime = True, injuries = "None")
+    print()
+
+    # * are used for an unkown number of positional arguments and stored in a tuple
+    def display_nums(first_num, second_num, *opt_nums):
+        print(first_num)
+        print(second_num)
+        print(opt_nums)
+    
+    display_nums(100, 200, 300, 400, 500)
     # Lesson 47 - Functions: Passing information back from them
     '''
     '''
