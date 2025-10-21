@@ -571,12 +571,20 @@ def main() -> None:
     display_nums(100, 200, 300, 400, 500)
     # Lesson 47 - Functions: Passing information back from them
     '''
+    Functions can return information back to a function call, however they need a variable to store the return value.
     '''
     print("\nLesson 47: ")
+    def what_is_my_name() -> str:
+        return "Heisenberg"
+    name: str = what_is_my_name()
+    print(f"Say my name! You're {name}.")
     # Lesson 48 -Using functions as variables (which is what they really are)
     '''
+    Function calls are replaced with the value that is returned by the function. This means you can use functions
+    as parameters and variables in other areas of code
     '''
     print("\nLesson 48: ")
+    print(f"Say my name! You're {what_is_my_name()}.")
     # Lesson 49 -Functions: Local vs. global variables
     '''
     '''
