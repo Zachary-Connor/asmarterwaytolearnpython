@@ -587,64 +587,122 @@ def main() -> None:
     print(f"Say my name! You're {what_is_my_name()}.")
     # Lesson 49 -Functions: Local vs. global variables
     '''
+    To understand local vs global variables, we need to understand scope.
+    Scope refers to what functions and other structures can access inside your code. It is what they can see and use.
+    Local variables exist inside of functions, can can only be accessed by that function.
+    Global variables exist outside of functions and can be accessed from anywhere.
     '''
     print("\nLesson 49: ")
+    def print_y() -> None:
+        #local variable y
+        y: int = 12
+        print(y)
+
+    #global variable
+    y: int = 1
+    print_y()
+    print(y)
+
     # Lesson 50 - Functions within functions
     '''
+    As we have already seen, functions can be called inside of other functions, like when we use print
+    in the above print_y() function
     '''
     print("\nLesson 50: ")
-
-    # Lesson 51 - 
+    print("Nothing new to add here")
+    # Lesson 51 - While Loops
     '''
+    While loops are similar to for loops, but they continue to loop as long as a condition is met.
+    Once the condition is no longer met, the loop stops.
     '''
     print("\nLesson 51: ")
+    x: int = 10
+    while x > 0:
+        print(x)
+        x -= 1
 
-    # Lesson 52 - 
+    # Lesson 52 - While Loops Setting A Flag
     '''
+    A flag is simply a boolean value, so True or False in Python. While loops typically use flags to control the number of iterations they do.
     '''
     print("\nLesson 52: ")
+    flag: bool = True
+    while flag:
+        if x == 10:
+            flag = False
+        else:
+            print(x)
+            x += 1
 
-    # Lesson 53 - 
+    # Lesson 53 - Classes
     '''
+    This is the heart of programming right here! Classes are templates that help us standardize and organize information.
+    To create a class, we use the class keyword followed by the name of the class, and lastly parentheses with a colon ():.
+    Ex: class Patient(): 
+    Typically classes are Capitalized.
     '''
     print("\nLesson 53: ")
-
-    # Lesson 54 - 
+    print("We will create the class in the last class module which is 61")
+    # Lesson 54 - Classes Starting to build the structure
     '''
+    Since Classes represent objects, they need to be created somehow in the code.
+    Classes have methods or functions known as constructors which are functions to initialize
+    the class attributes. The constructor always uses the name __init__(self):
+    Self refers to the class instance using the __init__() method. The constructor can have
+    additonal paramters, but it must always include self.
+    
+    Building off of the Patient example, we get the following example:
+    class Patient():
+        def __init__(self, name):
     '''
     print("\nLesson 54: ")
 
-    # Lesson 55 - 
+    # Lesson 55 - Classes: A bit of housekeeping
     '''
+    To properly give your class an attribute, it needs to further define a class instance variable in the constructor.
+    Class attributes always start with self. in the class definition. Typically, you use the same name as the parameter.
+    Here is our Patient example:
+    class Patient():
+        def __init__(self, last_name):
+            self.last_name = last_name
     '''
     print("\nLesson 55: ")
 
-    # Lesson 56 - 
+    # Lesson 56 - Classes: Creating an instance
     '''
+    To create an instance of our patient class, we need a variable and to call the class constructor.
+    Ex: patient123 = Patient("Taleb")
     '''
     print("\nLesson 56: ")
 
-    # Lesson 57 - 
+    # Lesson 57 - Classes: A little more complexity
     '''
+    Like I stated earlier, we can have Classes with more than one attribute
+    Ex:
+    class Patient():
+        def __init__(self, first_name, last_name):
+            self.first_name = first_name
+            self.last_name = last_name
     '''
     print("\nLesson 57: ")
 
-    # Lesson 58 - 
+    # Lesson 58 - Classes: Getting info out of instances
     '''
+    
     '''
     print("\nLesson 58: ")
 
-    # Lesson 59 - 
+    # Lesson 59 - Classes: Building functions into them
     '''
     '''
     print("\nLesson 59: ")
 
-    # Lesson 60 - 
+    # Lesson 60 - Classes: Coding a method
     '''
     '''
     print("\nLesson 60: ")
 
-    # Lesson 61 - 
+    # Lesson 61 - Classes: Changing an attribute's value
     '''
     '''
     print("\nLesson 61: ")
