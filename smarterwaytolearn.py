@@ -688,26 +688,59 @@ def main() -> None:
 
     # Lesson 58 - Classes: Getting info out of instances
     '''
-    
+    We can directly access the Class attributes/members by using the instnace of the class, and the dot operator followed by the name of
+    the Class attribute/member.
+    Ex:
+    pid123 = Patient("Gunther", "Bobby")
+    print(pid123.first_name)
     '''
     print("\nLesson 58: ")
 
     # Lesson 59 - Classes: Building functions into them
     '''
+    Classes can have functions built into them called methods. They too are treated like Class attributes/members
+    and need to be called via the instance of the class, the dot operator, and the function name with the parentheses and
+    function arguments if needed. EX:
+    pid123.setAge(22)
     '''
     print("\nLesson 59: ")
 
     # Lesson 60 - Classes: Coding a method
     '''
+    As stated above, Classes can have methods or functions built into them. All functions are created like regular functions
+    except for the fact that their first parameter should always be the keyword self.
+    EX:
+    def setAge(self, newAge):
+        self.age = newAge
     '''
     print("\nLesson 60: ")
 
     # Lesson 61 - Classes: Changing an attribute's value
     '''
+    We can directly modify class instance attribute values by using the dot operator to access a specific member, and then we
+    can use the assignment operator to assign the attribute a new value.
+    Ex:
+    pid123.age = 22
     '''
     print("\nLesson 61: ")
+    class Student():
+        def __init__(self, first_name: str, last_name: str, age: int) -> None:
+            self.first_name = first_name
+            self.last_name = last_name
+            self.age = age
+        
+        def __str__(self) -> str:
+            return(f"first_name: {self.first_name}, last_name: {self.last_name}, age: {self.age}")
+        
+        def setAge(self, newAge: int) -> None:
+            self.age = newAge
 
-    # Lesson 62 - 
+    pid123 = Student("Zachary", "Connor", 22)
+    print(pid123)
+    print(f"pid123.age = {pid123.age}")
+    pid123.age = 23
+    print(f"after age update, pid123.age = {pid123.age}")
+    # Lesson 62 - Data files
     '''
     '''
     print("\nLesson 62: ")
