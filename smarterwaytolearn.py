@@ -801,9 +801,15 @@ def main() -> None:
 
     # Lesson 67 - CSV Files
     '''
+    In order to read CSV files, we need access to the csv module. We do this by importing csv.
+    Then we need to open the file the way we now know how to. Lastly, we use the reader function
+    from csv to read the file by passing it the file handle.
     '''
     print("\nLesson 67: ")
-
+    import csv
+    with open("potions.csv") as file:
+        content: str= csv.reader(file)
+    print(content)
     # Lesson 68 - CSV Files: Reading them
     '''
     '''
