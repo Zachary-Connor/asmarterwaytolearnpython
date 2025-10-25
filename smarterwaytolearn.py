@@ -1,7 +1,7 @@
 '''
 Author: Zachary Connor
 
-Last Updated: 10/23/2025
+Last Updated: 10/24/2025
 
 Program: Cover all 77 lessons and topics from Mark Myers' A Smarter Way to Learn Python
          I personally coded each lesson based on the topics covered, but they are quite
@@ -752,77 +752,104 @@ def main() -> None:
     '''
     print("\nLesson 62: ")
 
-    # Lesson 63 - 
+    # Lesson 63 - Data Files: Storing Data 
     '''
+    We can store information in files by writing to them. File processing uses the write command
+    which is a function that is apart of the file handler create in the open statement. We pass the 
+    function an argument which can be a string of text to put into the file. Ex:
+    with open("patients.txt", "w") as file:
+        file.write("Zach, Connor, 22)
     '''
     print("\nLesson 63: ")
-
-    # Lesson 64 - 
+    with open("patients.txt", "w") as file:
+        file.write("Zach, Connor, 22")
+    # Lesson 64 - Data Files: Retrieving Data
     '''
+    We can also open files to read from them and use the data in our program. 
+    By default, without specifying an option to open, it will read the file only.
+    To read the entire file, you use the read() method from the file handler instance.
+    Ex:
+        with open("patients.txt", "r") as file:
+            content: str= file.read()
     '''
     print("\nLesson 64: ")
-
-    # Lesson 65 - 
+    with open("patients.txt") as file:
+        content: str = file.read()
+    print(content)
+    # Lesson 65 -  Data Files: Appending Data 
     '''
+    In order to append data to a file instead of overwritting it, we use the option a instead of w.
+    By default, append will add text to the same line, so we must add \n to write to different lines in the file.
     '''
     print("\nLesson 65: ")
+    with open("patients.txt", "a") as file:
+        file.write("\nGunther, Bobby, 1")
 
-    # Lesson 66 - 
+    with open("patients.txt") as file:
+        print(file.read())
+    # Lesson 66 - Modules
     '''
+    This section talks about the fact that you can use other python files called modules in your main .py program.
+    You use the import keyword and then the name of the file you want to include. For example,
+    lets say you create a python file called calculations.py and you want to include it in another program.
+    Inside that other program you use this line of code: import calculations
+    You don't include the .py and to access any code from that file, you just specify it when calling functions.
+    For example, lets say you want to use the calc() function from the imported file, you can just do
+    calculations.calc(), and it will work!
     '''
     print("\nLesson 66: ")
 
-    # Lesson 67 - 
+    # Lesson 67 - CSV Files
     '''
     '''
     print("\nLesson 67: ")
 
-    # Lesson 68 - 
+    # Lesson 68 - CSV Files: Reading them
     '''
     '''
     print("\nLesson 68: ")
 
-    # Lesson 69 - 
+    # Lesson 69 - CSV Files: Picking info out of them
     '''
     '''
     print("\nLesson 69: ")
 
-    # Lesson 70 - 
+    # Lesson 70 - CSV Files: Loading info into them part1
     '''
     '''
     print("\nLesson 70: ")
 
-    # Lesson 71 - 
+    # Lesson 71 - CSV Files: Loading info into them part2
     '''
     '''
     print("\nLesson 71: ")
 
-    # Lesson 72 - 
+    # Lesson 72 - CSV Files: Loading info into them part3
     '''
     '''
     print("\nLesson 72: ")
 
-    # Lesson 73 - 
+    # Lesson 73 - CSV Files: Appending rows to them
     '''
     '''
     print("\nLesson 73: ")
 
-    # Lesson 74 - 
+    # Lesson 74 - How to save a Python list or dictionary in a file: JSON
     '''
     '''
     print("\nLesson 74: ")
 
-    # Lesson 75 - 
+    # Lesson 75 - How to retrieve a Python list or dictionary from a JSON file
     '''
     '''
     print("\nLesson 75: ")
 
-    # Lesson 76 - 
+    # Lesson 76 - Planning for things to go wrong
     '''
     '''
     print("\nLesson 76: ")
 
-    # Lesson 77 - 
+    # Lesson 77 - A more practical example of exception handling
     '''
     '''
     print("\nLesson 77: ")
