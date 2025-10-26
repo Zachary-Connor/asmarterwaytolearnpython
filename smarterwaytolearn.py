@@ -1,7 +1,7 @@
 '''
 Author: Zachary Connor
 
-Last Updated: 10/24/2025
+Last Updated: 10/26/2025
 
 Program: Cover all 77 lessons and topics from Mark Myers' A Smarter Way to Learn Python
          I personally coded each lesson based on the topics covered, but they are quite
@@ -808,18 +808,29 @@ def main() -> None:
     print("\nLesson 67: ")
     import csv
     with open("potions.csv") as file:
-        content: str= csv.reader(file)
+        content = csv.reader(file)
     print(content)
     # Lesson 68 - CSV Files: Reading them
     '''
+    In order to properly read the lines from a csv file, we need to store them in a list
+    using a for loop to iterate through the variable storing the returned csv.reader() info.
     '''
     print("\nLesson 68: ")
-
+    with open("potions.csv") as file:
+        content = csv.reader(file)
+        lines = []
+        for line in content:
+            lines += line
+        print(lines)
     # Lesson 69 - CSV Files: Picking info out of them
     '''
+    We can use the index() function of lists to find the index of a specific value if it exists in the list.
     '''
     print("\nLesson 69: ")
-
+    # find the effect of "Draught of Peace" and display the effect
+    potion_index: int = lines.index("Draught of Peace")
+    effect_index: int = potion_index + 1
+    print(lines[effect_index])
     # Lesson 70 - CSV Files: Loading info into them part1
     '''
     '''
