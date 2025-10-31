@@ -841,7 +841,7 @@ def main() -> None:
     and then prints the file contents to the terminal
     '''
     print("\nLesson 70: ")
-    csv_content = ["Exercise,Difficulty,Description\n", "Pullup,Advanced,Bodyweight back and bicep exercise\n", "Squat,Beginner,Bodyweight leg exercise"]
+    csv_content = ["Exercise,Difficulty,Description\n", "Pullup,Advanced,Bodyweight back and bicep exercise\n", "Squat,Beginner,Bodyweight leg exercise\n"]
     with open("exercises.csv", "w") as f:
         for line in csv_content:
             f.write(line)
@@ -884,9 +884,20 @@ def main() -> None:
         print(content)
     # Lesson 73 - CSV Files: Appending rows to them
     '''
+    Just like regular data file processing, you just swap the w with an a to go into the append mode.
+    Everything else works the same!
     '''
     print("\nLesson 73: ")
+    with open("exercises.csv", "a", newline="") as f:
+        o = csv.writer(f, delimiter=",")
+        o.writerow(["Dip", "Advanced", "Chest exercise far more challenging than a pushup"])
 
+    with open("exercises.csv") as f:
+        o = csv.reader(f)
+        content = []
+        for value in o:
+            content += value
+        print(content)
     # Lesson 74 - How to save a Python list or dictionary in a file: JSON
     '''
     '''
