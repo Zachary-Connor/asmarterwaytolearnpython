@@ -854,14 +854,34 @@ def main() -> None:
         print(content)
     # Lesson 71 - CSV Files: Loading info into them part2
     '''
+    Now that we know how to open CSV files for writing, we need to call the correct function in the csv module.
+    The next line we need to add after opening the file and naming the file handle is to create a variable to store the
+    csv.writer() return value. For now, all we know is that the writer takes two arguments, the first one being the name
+    of the file handle, the second being a keyword argument as the delimiter.
+    Ex:
+    with open("exercises.csv", "w", newline="") as f:
+        data_handler = csv.writer(f, delimiter=',')
     '''
     print("\nLesson 71: ")
 
     # Lesson 72 - CSV Files: Loading info into them part3
     '''
+    We can use the data_handler object's function called writerow to write a row to the file.
+    The parameter passed to the writerow() function is a list of the values we want to add.
     '''
     print("\nLesson 72: ")
+    with open("exercises2.csv", "w", newline="") as f:
+        data_handler = csv.writer(f, delimiter=",")
+        data_handler.writerow(["Exercise", "Difficulty", "Description"])
+        data_handler.writerow(["Pushup", "Intermediate", "Chest exercise to build chest strength and endurance"])
+        data_handler.writerow(["Lunges", "Advanced", "Leg exercise to build balance and leg strength"])
 
+    with open("exercises2.csv") as f:
+        iterable = csv.reader(f)
+        content = []
+        for line in iterable:
+            content += line
+        print(content)
     # Lesson 73 - CSV Files: Appending rows to them
     '''
     '''
