@@ -1,7 +1,7 @@
 '''
 Author: Zachary Connor
 
-Last Updated: 10/26/2025
+Last Updated: 10/30/2025
 
 Program: Cover all 77 lessons and topics from Mark Myers' A Smarter Way to Learn Python
          I personally coded each lesson based on the topics covered, but they are quite
@@ -833,9 +833,25 @@ def main() -> None:
     print(lines[effect_index])
     # Lesson 70 - CSV Files: Loading info into them part1
     '''
+    In order to write to a csv file, we need to pass the open function more arguments, "w" to write, and newline="".
+    Ex:
+    with open("potions.csv", "w", newline="") as file:
+    
+    The code in this lesson creates a csv file using the regular file processing to add 3 rows and 3 columns
+    and then prints the file contents to the terminal
     '''
     print("\nLesson 70: ")
+    csv_content = ["Exercise,Difficulty,Description\n", "Pullup,Advanced,Bodyweight back and bicep exercise\n", "Squat,Beginner,Bodyweight leg exercise"]
+    with open("exercises.csv", "w") as f:
+        for line in csv_content:
+            f.write(line)
 
+    with open("exercises.csv") as f:
+        iterable = csv.reader(f)
+        content = []
+        for line in iterable:
+            content += line
+        print(content)
     # Lesson 71 - CSV Files: Loading info into them part2
     '''
     '''
