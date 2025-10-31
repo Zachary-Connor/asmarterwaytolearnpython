@@ -900,23 +900,60 @@ def main() -> None:
         print(content)
     # Lesson 74 - How to save a Python list or dictionary in a file: JSON
     '''
+    Very similar to regular file processing, we need to open the json file and specify w to write to it.
+    Just like csv, we need to import the json module to take advantage of the json.dump() function
+    which takes two arguments, the list or dictionary we want to add to the file, and the name
+    of the file handle we used to open the json file.
     '''
     print("\nLesson 74: ")
-
+    import json
+    with open("random.json", "w") as j:
+        exercises = ["Pullup", "Squats", "Pushups"]
+        json.dump(exercises, j)
     # Lesson 75 - How to retrieve a Python list or dictionary from a JSON file
     '''
+    Similar to the above statement, except we only need to read the file, so we can use the short hand or
+    simply not specify that we are reading the file by avoiding passing the open() funciton "r" as an argument.
+    We use the json.load() function to load an item from the json file by passing it just the file handle
     '''
     print("\nLesson 75: ")
-
+    with open("random.json") as j:
+        exercises_list = json.load(j)
+        print(exercises_list)
     # Lesson 76 - Planning for things to go wrong
     '''
+    We can use what is called a try except block.
+    The try block is used as the code to try out. We use this when an error may occur like a file not existing.
+    The except block catches an error if one occurs and allows us to do something to remediate or notify the user.
+    The except block takes an exception class object that it expects to receive from the try block
     '''
     print("\nLesson 76: ")
-
+    try:
+        with open("exists.json") as j:
+            info = json.load(j)
+    except FileNotFoundError:
+        print("File does not exist")
     # Lesson 77 - A more practical example of exception handling
     '''
+    This lesson just builds off of the previous try except example. We can use a loop to prompt the user
+    for another value to input so we can properly process an existing file
     '''
     print("\nLesson 77: ")
+    try:
+        with open("exists.json") as j:
+            info = json.load(j)
+            print(info)
+    except FileNotFoundError:
+        print("File does not exist. Please enter a valid file name ending in .json.")
+        while True:
+            try:
+                file_name = input("Enter the file name here: ")
+                with open(file_name) as j:
+                    info = json.load(j)
+                    print(f"json file info: {info}")
+                    break
+            except FileNotFoundError:
+                print("File does not exist. Please enter a valid file name.")
 
 if __name__ == "__main__":
     main()
